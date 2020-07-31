@@ -1,0 +1,16 @@
+{
+  "name": "MRM",
+  "auth": "github:tony-o",
+  "api":  0,
+  "version": "0",
+  "provides": {
+    "MRM": "lib/MRM.rakumod"
+  },
+  "depends": [
+    "DB::SQLite"
+  ],
+  "test-depends": [
+    "DB::SQLite"
+  ],
+  "resources": [ ]
+}
