@@ -9,7 +9,7 @@ there are two major components to this demo: `YAQL` and `MRM`
 
 `MRM` is minimal framework designed around describing the backend
 
-`MRM::Monadd` is a monad-ish object that allows you use a different type of flow control in your application.  the goal with this is to be able to pass a junction to handle side effects.  in this way it becomes immediately useful in things like user management:
+`MRM::Monadd` is a monad-ish object that allows you use a different type of flow control in your application.  the goal with this is to be able to pass a junction to handle side effects.  in this way it becomes immediately useful in things like user management (note: the example shows junctions to handle side effects, that currently doesn't work in this repo as its just in prototyping phase):
 
 ```perl6
 ...
@@ -24,7 +24,7 @@ my $x = yaql('usr', user_id => $id)
 ...
 ```
 
-this is the eventual intended behavior over:
+current pattern is:
 
 ```perl6
 my $usr = $users.find({ user_id => $id }).first;
