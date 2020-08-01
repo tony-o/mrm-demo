@@ -27,4 +27,5 @@ method blend(%x) {
 
 method idx(Int $i) { @!data[$i]; }
 method m-idx(Int $i) { $cols[$i]; }
+method db  { $cols[0].value[2]; }
 method tbl { $tbl; }
